@@ -2,10 +2,6 @@
 videos/*
 !videos/.gitkeep
 
-# Музыка — авторские права, не пушим
-music/*
-!music/.gitkeep
-
 # Портативный ffmpeg — большой бинарь, лицензия GPL, не пушим
 ffmpeg/*
 !ffmpeg/.gitkeep
