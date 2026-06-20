@@ -6,8 +6,8 @@ REM Сколько видео обрабатывать одновременно.
 REM каждое видео само грузит несколько ядер (libx264 multi-thread), поэтому
 REM параллельных видео берём заметно меньше, чем ядер, иначе диск/CPU забьются.
 REM Хочешь зафиксировать вручную — закомментируй блок ниже и пропиши число сам.
-set /a MAX_PARALLEL=%NUMBER_OF_PROCESSORS% / 4
-if %MAX_PARALLEL% LSS 1 set MAX_PARALLEL=1
+set /a MAX_PARALLEL=%NUMBER_OF_PROCESSORS% / 2
+if %MAX_PARALLEL% LSS 2 set MAX_PARALLEL=2
 if %MAX_PARALLEL% GTR 6 set MAX_PARALLEL=6
 
 REM ======== ПРОВЕРКА FFMPEG ========
