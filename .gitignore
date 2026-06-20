@@ -1,0 +1,23 @@
+# Входные видео — не пушим в репо
+videos/*
+!videos/.gitkeep
+
+# Музыка — авторские права, не пушим
+music/*
+!music/.gitkeep
+
+# Портативный ffmpeg — большой бинарь, лицензия GPL, не пушим
+ffmpeg/*
+!ffmpeg/.gitkeep
+
+# Результаты обработки
+clips/
+JAS/
+JAS_teaser/
+frames/
+
+# Временные файлы скриптов
+*.tmp
+duration_*.tmp
+timings.log
+.done/
